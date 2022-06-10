@@ -1,2 +1,2 @@
-# as-phpclass
-anjali sah php class
+# ml-phpclass
+Manish Lokbidhi php class practice

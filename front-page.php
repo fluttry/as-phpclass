@@ -2,15 +2,6 @@
 include "userdata.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $username;?></title>
-</head>
-<body>
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,9 +9,8 @@ include "userdata.php";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $username;?></title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.css.map" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,7 +42,7 @@ include "userdata.php";
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2">
                     <div class="p-5">
-                        <img class="img-fluid rounded-circle" src="img/01.png" alt="">
+                        <img class="img-fluid rounded-circle" src="<?php echo get_template_directory_uri(); ?>/img/01.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -70,7 +60,7 @@ include "userdata.php";
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="p-5">
-                        <img class="img-fluid rounded-circle" src="img/02.png" alt="">
+                        <img class="img-fluid rounded-circle" src="<?php echo get_template_directory_uri(); ?>/img/02.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -88,7 +78,7 @@ include "userdata.php";
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2">
                     <div class="p-5">
-                        <img class="img-fluid rounded-circle" src="img/03.png" alt="">
+                        <img class="img-fluid rounded-circle" src="<?php echo get_template_directory_uri(); ?>/img/03.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -129,12 +119,10 @@ include "userdata.php";
         </div>
     </div>
     <footer class="align-items-center p-3 px-md-4 mt-3 bg-white border-top shadow-sm">
-        <p class="float-end"><a href="https://schoolofapp.com">School of App</a>||</a><a href="#top">Back to top</a></p>
-        <p>&copy; 2022 Anjali sah &middot; <a href="/project.html">Project</a> &middot; <a
+        <p class="float-end"><a href="https://schoolofapp.com">School of App</a>||
+        &copy; 2022 Anjali sah &middot; <a href="/project.html">Project</a> &middot; <a
                 href="/progress.html">Progress</a></p>
     </footer>
 </body>
 
-</html>
-</body>
 </html>
